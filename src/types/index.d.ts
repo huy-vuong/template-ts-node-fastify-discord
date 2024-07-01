@@ -1,5 +1,5 @@
 import 'fastify';
-import { EnvSchemaType } from 'template-ts-node-fastify/schemas/env-schema';
+import { EnvSchemaType } from 'template-ts-node-fastify-discord/schemas/env-schema';
 
 declare module 'fastify' {
   interface FastifyInstance {

@@ -1,7 +1,7 @@
 import 'module-alias/register';
 
 import Fastify from 'fastify';
-import App from 'template-ts-node-fastify/app';
+import App from 'template-ts-node-fastify-discord/app';
 
 async function start() {
   const fastify = Fastify({ logger: true });

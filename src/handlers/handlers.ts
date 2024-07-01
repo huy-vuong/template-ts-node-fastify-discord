@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
-import { getHello } from 'template-ts-node-fastify/hello';
+import { getHello } from 'template-ts-node-fastify-discord/hello';
 
 export function get(fastify: FastifyInstance) {
   return async (request: FastifyRequest, reply: FastifyReply) => {

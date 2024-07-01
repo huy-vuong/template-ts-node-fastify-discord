@@ -1,7 +1,7 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
 micros:
-  - name: ts-node-fastify
+  - name: ts-node-fastify-discord
     src: ./
     engine: nodejs20
     primary: true

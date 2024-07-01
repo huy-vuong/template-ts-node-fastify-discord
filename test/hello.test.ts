@@ -1,4 +1,4 @@
-import { getHello } from 'template-ts-node-fastify/hello';
+import { getHello } from 'template-ts-node-fastify-discord/hello';
 
 describe('getHello', () => {
   test("returns the string 'Hello World!'", () => {
