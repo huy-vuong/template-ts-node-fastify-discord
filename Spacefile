@@ -1,0 +1,18 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: ts-node-fastify
+    src: ./
+    engine: nodejs20
+    primary: true
+    commands:
+      - npm run build
+    include:
+      - .
+    run: 'node build/src/index.js'
+    public_routes:
+      - '/*'
+    presets:
+      env:
+        - name: HELLO
+          description: Target to say "Hello!" to

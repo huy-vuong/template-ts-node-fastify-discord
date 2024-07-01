@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es2022": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb/base",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint", "prettier", "jest"],
+  "root": true,
+  "rules": {
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "max-classes-per-file": "off",
+    "no-console": "off",
+    "no-nested-ternary": "off",
+    "no-warning-comments": "error",
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
