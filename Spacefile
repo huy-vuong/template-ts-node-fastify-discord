@@ -1,9 +1,9 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
 micros:
-  - name: ts-node-fastify-discord
+  - name: fastify-discord
     src: ./
-    engine: nodejs20
+    engine: nodejs16
     primary: true
     commands:
       - npm run build
@@ -14,5 +14,9 @@ micros:
       - '/*'
     presets:
       env:
-        - name: HELLO
-          description: Target to say "Hello!" to
+        - name: DISCORD_APPLICATION_ID
+          description: Application ID on the Discord application's General Information page
+        - name: DISCORD_BOT_TOKEN
+          description: Token on the Discord application's Bot page
+        - name: DISCORD_PUBLIC_KEY
+          description: Public Key on the Discord application's General Information page
